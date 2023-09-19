@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row1">
+        <img src="img/butterfly.jpg" alt="image not found" id="img1" />
+      </div>
+      <div class="row2">
+        <button class="btn" onclick="previousImage()">Previous</button>
+        <button class="btn" onclick="resetImage()">Reset</button>
+        <button class="btn" onclick="afterImage()">After</button>
+      </div>
+    </div>
+
+    <script>
+      let changeColor = ["red", "green", "blue"];
+      let place = 0;
+      function previousImage() {
+        document.getElementById("img1").src = "img/lockscreen.png";
+      }
+      function resetImage() {
+        document.getElementById("img1").src = "img/butterfly.jpg";
+      }
+      function afterImage() {
+        document.getElementById("img1").src = "img/sunset.jpg";
+      }
+    </script>
+  </body>
+</html>
